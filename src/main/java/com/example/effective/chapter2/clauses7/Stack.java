@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.EmptyStackException;
 
 /**
- * 求求你写个注解吧 TODO
+ * 内存泄漏
  *
  * @Author: zhenglongze
  * @Date 2019/11/18 11:51
@@ -22,6 +22,7 @@ public class Stack {
 
     public void push(Object e){
         ensureCapacity();
+        elements[size++]=e;
     }
 
     public Object pop(){
