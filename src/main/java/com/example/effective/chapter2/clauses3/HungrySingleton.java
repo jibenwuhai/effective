@@ -1,6 +1,8 @@
 package com.example.effective.chapter2.clauses3;
 
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 单例
@@ -28,4 +30,6 @@ public class HungrySingleton implements Serializable {
     private Object readResolve(){
         return singleton;
     }
+
+
 }

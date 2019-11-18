@@ -19,7 +19,7 @@ public class SingletonTest {
     public static void main(String[] args) {
         //serializable();
         //reflectMethod();
-        emumTest();
+        //emumTest();
 
     }
 
