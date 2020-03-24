@@ -1,0 +1,13 @@
+覆盖equals时请遵守通用约定
+1、类的每个实例本质上都是唯一的。
+2、类没必要提供“逻辑相等”的测试功能。
+3、超类已经覆盖类equals，超类的行为对这个类也是合适的。
+4、类是私有的，或者包级私有的，可以确定它的equals方法永远不会被调用。
+等价属性: x,y,z均为非null
+1、自反性，x.equals(x) = true
+2、对称性，x.equals(y) = true => y.equals(x) = true
+3、传递性，x.equals(y) = true,y.equals(z) => x.equals(z)
+4、一致性，x.equals(y) 只要x，y不变，多次调用永远为true
+5、非空性，x.equals(null) = false
+
+总之:不要轻易覆盖equals，除非迫不得已。

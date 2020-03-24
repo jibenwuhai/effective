@@ -1,0 +1,7 @@
+考虑实现Comparable接口
+1.sgn(x.comparable(y)) == -sgn(y.comparable(x))
+2.x.comparable(y)>0&&y.comparable(z)>0 => x.comparable(z)>0
+3.x.comparable(y)==0 =>sgn(x.comparable(z))==sgn(y.comparable(z))
+4.建议（x.comparable(y)==0）==(x.equals(Y))
+
+在comparableTo方法中使用关系操作符<和>是非常繁琐的，并且容易出错，因此不建议使用
